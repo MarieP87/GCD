@@ -65,10 +65,10 @@ Blablablablabla
 
 
 ## Tidy data set
-`Subject
-Activity
-tBodyAccMeanX
-tBodyAccMeanY
+`    Subject
+    Activity
+    tBodyAccMeanX
+    tBodyAccMeanY
 tBodyAccMeanZ
 tBodyAccStdX
 tBodyAccStdY
