@@ -50,7 +50,7 @@ Blablablablabla
 * The sorted indexes of the columns with a names countaining "mean()" or "std()" were selected : 66 colums.
 * A new data frame `mean_std_data` was created with 68 columns : the subjects one, the activity codes one and the 66 previously selected ones.
 
-3)Uses descriptive activity names to name the activities in the data set
+3) Uses descriptive activity names to name the activities in the data set
 
 * The activity labels file was loaded
 * For each of the activity, the activity code was replaced by the activity label, for each row of the `mean_std_data` data frame.
@@ -64,4 +64,73 @@ Blablablablabla
 * Thanks to the function `ddply` from the package `plyr`, the average of each variable for each activity and each subject was computed.
 
 
+## Tidy data set
+`Subject
+Activity
+tBodyAccMeanX
+tBodyAccMeanY
+tBodyAccMeanZ
+tBodyAccStdX
+tBodyAccStdY
+tBodyAccStdZ
+tGravityAccMeanX
+tGravityAccMeanY
+tGravityAccMeanZ
+tGravityAccStdX
+tGravityAccStdY
+tGravityAccStdZ
+tBodyAccJerkMeanX
+tBodyAccJerkMeanY
+tBodyAccJerkMeanZ
+tBodyAccJerkStdX
+tBodyAccJerkStdY
+tBodyAccJerkStdZ
+tBodyGyroMeanX
+tBodyGyroMeanY
+tBodyGyroMeanZ
+tBodyGyroStdX
+tBodyGyroStdY
+tBodyGyroStdZ
+tBodyGyroJerkMeanX
+tBodyGyroJerkMeanY
+tBodyGyroJerkMeanZ
+tBodyGyroJerkStdX
+tBodyGyroJerkStdY
+tBodyGyroJerkStdZ
+tBodyAccMagMean
+tBodyAccMagStd
+tGravityAccMagMean
+tGravityAccMagStd
+tBodyAccJerkMagMean
+tBodyAccJerkMagStd
+tBodyGyroMagMean
+tBodyGyroMagStd
+tBodyGyroJerkMagMean
+tBodyGyroJerkMagStd
+fBodyAccMeanX
+fBodyAccMeanY
+fBodyAccMeanZ
+fBodyAccStdX
+fBodyAccStdY
+fBodyAccStdZ
+fBodyAccJerkMeanX
+fBodyAccJerkMeanY
+fBodyAccJerkMeanZ
+fBodyAccJerkStdX
+fBodyAccJerkStdY
+fBodyAccJerkStdZ
+fBodyGyroMeanX
+fBodyGyroMeanY
+fBodyGyroMeanZ
+fBodyGyroStdX
+fBodyGyroStdY
+fBodyGyroStdZ
+fBodyAccMagMean
+fBodyAccMagStd
+fBodyBodyAccJerkMagMean
+fBodyBodyAccJerkMagStd
+fBodyBodyGyroMagMean
+fBodyBodyGyroMagStd
+fBodyBodyGyroJerkMagMean
+fBodyBodyGyroJerkMagStd`
 
