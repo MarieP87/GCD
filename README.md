@@ -21,7 +21,7 @@ Project instructions :
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive activity names. 
+4. Appropriately labels the data set with descriptive features names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Blablablablabla
@@ -43,15 +43,26 @@ Blablablablabla
      * `y_all` = `y_train` + `y_test`
 * Then, the data were merged by column : 
      * `merged_data` = `subject_all` + `y_all` + `X_all`
-* The result is a data frame with the subjects, the activity codes and the features (in columns) for all the subjects (train + test) (in rows)
+* The result is a data frame with the subjects, the activity codes and the features (in columns) for all the subjects (train + test) (in rows).
 
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-* The sorted indexes of the columns with a names countaining "mean()" or "std()" were selected : 66 colums
-* A new data frame `mean_std_data` was created with 68 columns : the subjects, the activity codes and the 66 previously selected 
+* The sorted indexes of the columns with a names countaining "mean()" or "std()" were selected : 66 colums.
+* A new data frame `mean_std_data` was created with 68 columns : the subjects one, the activity codes one and the 66 previously selected ones.
 
 3. Uses descriptive activity names to name the activities in the data set
 
 * The activity labels file was loaded
 * For each of the activity, the activity code was replaced by the activity label, for each row of the `mean_std_data` data frame.
+
+4. Appropriately labels the data set with descriptive features names.
+
+* The characters : `(`, '`)`, and `_` were removed from the column names. Upper case was tolerated in a concerned to be clearer. (The different feature names are detailed below).
+
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+* Thanks to the function `ddply` from the package `plyr`, the average of each variable for each activity and each subject was computed.
+
+
+
