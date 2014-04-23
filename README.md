@@ -13,7 +13,7 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-The initial `getdata-projectfiles-UCI HAR Dataset.zip` file was used in the `run_analysis.R` script.
+The initial getdata-projectfiles-UCI HAR Dataset.zip file was used in the run_analysis.R script.
 
 ## Proccessing Data
 Project instructions : 
@@ -27,14 +27,18 @@ Project instructions :
 Blablablablabla
 
 1. Merges the training and the test sets to create one data set.
+
 * The data was extracted from the zip file.
 * The files used for the analysis were loaded :
-     * `features.txt`
-     * `activity_labels.txt`
-     * `subject_train.txt`
-     * `subject_test.txt`
-     * `X_train.txt`
-     * `X_test.txt`
-     * `y_train.txt`
-     * `y_test.txt`
+     * features.txt
+     * activity_labels.txt
+     * subject_train.txt
+     * subject_test.txt
+     * X_train.txt
+     * X_test.txt
+     * y_train.txt
+     * y_test.txt
+* First, the data were merged by row :
+     * `subject_train` + `X_train` + `y_train`
+     * `subject_test` + `X_test` + `y_test`
   
