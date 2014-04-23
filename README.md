@@ -152,3 +152,5 @@ Here are the diffents feature names :
     fBodyBodyGyroMagStd
     fBodyBodyGyroJerkMagMean
     fBodyBodyGyroJerkMagStd
+    
+Each column countains (except the subject and activity ones) the average of each variable for each activity and each subject.
