@@ -44,4 +44,14 @@ Blablablablabla
      * `y_all` = `y_train` + `y_test`
 * Then, the data were merged by column : 
      * `merged_data` = `subject_all` + `y_all` + `X_all`
-* The result is a data frame with the subject, the activities and the features (in column) for all the subjects (train + test) (in row)
+* The result is a data frame with the subject, the activities and the features (in columns) for all the subjects (train + test) (in rows)
+
+
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+
+* The sorted index of the columns with a names countaining "mean()" or "std()" were selected : 66 colums
+* A new data frame was created with 68 columns : the subject, the activity code and the 66 previously selected 
+
+3. Uses descriptive activity names to name the activities in the data set
+
+* 
