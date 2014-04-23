@@ -57,7 +57,7 @@ Blablablablabla
 
 4) Appropriately labels the data set with descriptive features names.
 
-* The characters : `(`, '`)`, and `_` were removed from the column names. Upper case was tolerated in a concerned to be clearer. (The different feature names are detailed below).
+* The characters : `(`, '`)`, and `-` were removed from the column names. Upper case was tolerated in a concerned to be clearer. (The different feature names are detailed below).
 
 5) Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
