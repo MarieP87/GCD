@@ -38,7 +38,10 @@ Blablablablabla
      * X_test.txt
      * y_train.txt
      * y_test.txt
-* First, the data were merged by row :
-     * `subject_train` + `X_train` + `y_train`
-     * `subject_test` + `X_test` + `y_test`
-  
+* First, the data were merged by row:
+     * `subject_all` = `subject_train` + `subject_test`
+     * `X_all` = `X_train` + `X_test`
+     * `y_all` = `y_train` + `y_test`
+* Then, the data were merged by column : 
+     * `merged_data` = `subject_all` + `y_all` + `X_all`
+* The result is a data frame with the subject, the activities and the features (in column) for all the subjects (train + test) (in row)
