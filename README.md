@@ -65,9 +65,27 @@ Blablablablabla
 
 
 ## Tidy data set
+The final data set is composed of 180 rows and 68 columns. Each row correspond to a subject-activity combination and each column to a feature. 
 
-    Subject
-    Activity
+Here is a guide to understand the feature names : 
+* subject : subject index (1 to 30)
+* activity : subject activity name, including : LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+* X, Y, Z : X, Y or Z axis (of the smartphone accelerometer or gyroscope)
+* t : time domain signals
+* f : frequency domain signals (Fast Fourier Transform (FFT) was applied to the signals)
+* Body : body (of the subject related) signals 
+* Gravity : gravity related signals
+* Acc : acceleration signals from the smartphone accelerometer
+* Gyro : angular velocity from the smartphone gyroscope
+* Jerk : linear acceleration and angular velocity were derived in time to obtain Jerk signals
+* Mag : magnitude of the three-dimensional signals were calculated using the Euclidean norm
+* Mean : mean value
+* Std : standard deviation value
+
+Here are the diffents feature names : 
+
+    subject
+    activity
     tBodyAccMeanX
     tBodyAccMeanY
     tBodyAccMeanZ
