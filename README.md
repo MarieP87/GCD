@@ -29,9 +29,8 @@ Blablablablabla
 1. Merges the training and the test sets to create one data set.
 
 * The data was extracted from the zip file.
-* The files used for the analysis were loaded :
+* The files were loaded :
      * features.txt
-     * activity_labels.txt
      * subject_train.txt
      * subject_test.txt
      * X_train.txt
@@ -44,14 +43,15 @@ Blablablablabla
      * `y_all` = `y_train` + `y_test`
 * Then, the data were merged by column : 
      * `merged_data` = `subject_all` + `y_all` + `X_all`
-* The result is a data frame with the subject, the activities and the features (in columns) for all the subjects (train + test) (in rows)
+* The result is a data frame with the subjects, the activity codes and the features (in columns) for all the subjects (train + test) (in rows)
 
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-* The sorted index of the columns with a names countaining "mean()" or "std()" were selected : 66 colums
-* A new data frame was created with 68 columns : the subject, the activity code and the 66 previously selected 
+* The sorted indexes of the columns with a names countaining "mean()" or "std()" were selected : 66 colums
+* A new data frame `mean_std_data` was created with 68 columns : the subjects, the activity codes and the 66 previously selected 
 
 3. Uses descriptive activity names to name the activities in the data set
 
-* 
+* The activity labels file was loaded
+* For each of the activity, the activity code was replaced by the activity label, for each row of the `mean_std_data` data frame.
