@@ -25,7 +25,16 @@ Project instructions :
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Blablablablabla
+
 1. Merges the training and the test sets to create one data set.
-* First, the data was extracted from the zip file.
+* The data was extracted from the zip file.
 * The files used for the analysis were loaded :
-  ** the features, the activity labels, 
+** `features.txt`
+** `activity_labels.txt`
+** `subject_train.txt`
+** `subject_test.txt`
+** `X_train.txt`
+** `X_test.txt`
+** `y_train.txt`
+** `y_test.txt`
+  
